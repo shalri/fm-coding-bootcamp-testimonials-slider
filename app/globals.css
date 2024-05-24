@@ -39,3 +39,17 @@
 .slide-exit-active-reverse {
   transform: translateX(100%);
 }
+@layer utilities {
+  .bg-size-18 {
+    background-size: 18%;
+  }
+  .bg-size-50 {
+    background-size: 50%;
+  }
+  .bg-size-75 {
+    background-size: 75%;
+  }
+  .bg-size-100 {
+    background-size: 100%;
+  }
+}

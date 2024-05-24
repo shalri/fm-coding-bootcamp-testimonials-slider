@@ -28,6 +28,11 @@ const config: Config = {
         mobile: "375px",
         desktop: "1440px",
       },
+      backgroundImage: {
+        "footer-curve": "url('/images/pattern-curve.svg')",
+        "pattern-bg": "url('/images/pattern-bg.svg')",
+        "quotes-bg": "url('/images/pattern-quotes.svg')",
+      },
     },
   },
   plugins: [],

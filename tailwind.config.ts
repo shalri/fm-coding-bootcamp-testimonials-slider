@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -29,9 +31,9 @@ const config: Config = {
         desktop: "1440px",
       },
       backgroundImage: {
-        "footer-curve": "url('/images/pattern-curve.svg')",
-        "pattern-bg": "url('/images/pattern-bg.svg')",
-        "quotes-bg": "url('/images/pattern-quotes.svg')",
+        "footer-curve": `url('${basePath}/images/pattern-curve.svg')`,
+        "pattern-bg": `url('${basePath}/images/pattern-bg.svg')`,
+        "quotes-bg": `url('${basePath}/images/pattern-quotes.svg')`,
       },
     },
   },

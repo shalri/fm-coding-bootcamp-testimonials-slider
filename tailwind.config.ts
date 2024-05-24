@@ -31,9 +31,9 @@ const config: Config = {
         desktop: "1440px",
       },
       backgroundImage: {
-        "footer-curve": `url('${basePath}/images/pattern-curve.svg')`,
-        "pattern-bg": `url('${basePath}/images/pattern-bg.svg')`,
-        "quotes-bg": `url('${basePath}/images/pattern-quotes.svg')`,
+        "footer-curve": `url('/fm-coding-bootcamp-testimonials-slider/images/pattern-curve.svg')`,
+        "pattern-bg": `url('/fm-coding-bootcamp-testimonials-slider/images/pattern-bg.svg')`,
+        "quotes-bg": `url('/fm-coding-bootcamp-testimonials-slider/images/pattern-quotes.svg')`,
       },
     },
   },

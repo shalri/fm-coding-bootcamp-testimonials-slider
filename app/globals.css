@@ -2,46 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-.slide {
-  transition: transform 0.5s ease-in-out;
-  position: absolut;
-  /* width: 100%; */
+@layer base {
+  body {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+  }
 }
 
-.slide-enter {
-  transform: translateX(100%);
-}
-
-.slide-enter-active {
-  transform: translateX(0);
-}
-
-.slide-exit {
-  transform: translateX(0);
-}
-
-.slide-exit-active {
-  transform: translateX(-100%);
-}
-
-.slide-enter-reverse {
-  transform: translateX(-100%);
-}
-
-.slide-enter-active-reverse {
-  transform: translateX(0);
-}
-
-.slide-exit-reverse {
-  transform: translateX(0);
-}
-
-.slide-exit-active-reverse {
-  transform: translateX(100%);
-}
 @layer utilities {
+  @media (min-width: 640px) {
+    .quote-position {
+      background-position-x: 25%;
+    }
+  }
+  .clamp {
+    font-size: clamp(1rem, 3vw, 2rem);
+  }
+  .bg-size-15 {
+    background-size: 15%;
+  }
   .bg-size-18 {
     background-size: 18%;
+  }
+  .bg-size-40 {
+    background-size: 40%;
+  }
+  .bg-size-45 {
+    background-size: 45%;
+  }
+  .bg-size-48 {
+    background-size: 48%;
   }
   .bg-size-50 {
     background-size: 50%;
